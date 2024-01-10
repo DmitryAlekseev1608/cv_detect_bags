@@ -1,8 +1,7 @@
 venv_cv_detect_bags_experiments/
-models/
-/data
-/models
 runs/
-data/
-models/
+data/vid/
 __pycache__
+models/yolo8n_alex.pt
+models/yolov8n_pret.pt
+
