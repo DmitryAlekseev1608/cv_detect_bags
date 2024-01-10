@@ -1,0 +1,2 @@
+python3 commands.py start_yolov8n_pret
+python3 commands.py start_yolov8n_alex

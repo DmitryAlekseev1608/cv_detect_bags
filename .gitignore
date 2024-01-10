@@ -1,0 +1,8 @@
+venv_cv_detect_bags_experiments/
+models/
+/data
+/models
+runs/
+data/
+models/
+__pycache__

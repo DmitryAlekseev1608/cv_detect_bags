@@ -1,0 +1,13 @@
+yolo8n_alex:
+  classes : [1, 2, 3]
+  conf : 0.4
+  path_model : 'models/yolo8n_alex.pt'
+
+yolov8n_pret:
+  classes : [24, 26, 28]
+  conf : 0.4
+  path_model : 'models/yolov8n_pret.pt'  
+
+data:
+  path_vid : 'data/vid/vid1.mp4'
+  path_val_date : 
