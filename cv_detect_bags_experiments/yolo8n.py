@@ -3,10 +3,11 @@ import cv2
 
 class Yolo8n():
 
-    def __init__(self, conf, classes, path_model):
+    def __init__(self, conf, classes, path_model, path_vid):
         self.conf = conf
         self.classes = classes
         self.path_model = path_model
+        self.path_vid = path_vid
 
     def start_work_str_vid(self):
 
@@ -14,7 +15,7 @@ class Yolo8n():
         model = YOLO(self.path_model)
 
         # Open the video file
-        video_path = "data/vid1.mp4"
+        video_path = self.path_vid
         cap = cv2.VideoCapture(video_path)
 
         # Loop through the video frames

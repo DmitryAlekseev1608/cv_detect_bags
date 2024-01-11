@@ -5,11 +5,13 @@ from cv_detect_bags_experiments.yolo8n import Yolo8n
 from cv_detect_bags_experiments.dataset_coco import DatasetCoco
 
 def start_yolov8n_pret():
-    yolov8n_pret =  Yolo8n(cfg_yolo8n.yolov8n_pret.conf, cfg_yolo8n.yolov8n_pret.classes, cfg_yolo8n.yolov8n_pret.path_model)
+    yolov8n_pret =  Yolo8n(cfg_yolo8n.yolov8n_pret.conf, cfg_yolo8n.yolov8n_pret.classes, cfg_yolo8n.yolov8n_pret.path_model, \
+                           cfg_yolo8n.data.path_vid)
     yolov8n_pret.start_work_str_vid()
    
 def start_yolov8n_alex():
-    yolo8n_alex = Yolo8n(cfg_yolo8n.yolo8n_alex.conf, cfg_yolo8n.yolo8n_alex.classes, cfg_yolo8n.yolo8n_alex.path_model)
+    yolo8n_alex = Yolo8n(cfg_yolo8n.yolo8n_alex.conf, cfg_yolo8n.yolo8n_alex.classes, cfg_yolo8n.yolo8n_alex.path_model, \
+                         cfg_yolo8n.data.path_vid)
     yolo8n_alex.start_work_str_vid()
 
 def start_load_dataset_coco():

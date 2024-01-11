@@ -1,6 +1,5 @@
 from ultralytics.utils.downloads import download
 from pathlib import Path
-import yaml
 
 class DatasetCoco():
 
