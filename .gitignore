@@ -1,7 +1,6 @@
 venv_cv_detect_bags_experiments/
 runs/
-data/vid/
+data/
 __pycache__
 models/yolo8n_alex.pt
 models/yolov8n_pret.pt
-

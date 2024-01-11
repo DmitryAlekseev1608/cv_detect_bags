@@ -6,7 +6,7 @@ pip install -r requirements.txt
 ```
 2.
 ```bash
-dvc pull --remote myremote
+dvc pull --remote myremote --force
 ```
 
 ## Запуск двух вариантов моделек на видео

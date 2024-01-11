@@ -1,0 +1,21 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "commands.py start_load_dataset_coco",
+            "type": "python",
+            "request": "launch",
+            "program": "commands.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "start_load_dataset_coco",
+                "${env:USERNAME}"
+            ],
+            "envFile" : "venv_cv_detect_bags_experiments/bin/activate"
+        }
+    ]
+}

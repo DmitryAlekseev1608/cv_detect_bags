@@ -10,4 +10,4 @@ yolov8n_pret:
 
 data:
   path_vid : 'data/vid/vid1.mp4'
-  path_val_date : 
+
