@@ -1,7 +1,4 @@
 {
-    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
-    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
-    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
@@ -16,6 +13,32 @@
                 "${env:USERNAME}"
             ],
             "envFile" : "venv_cv_detect_bags_experiments/bin/activate"
-        }
+        },
+        {
+            "name": "commands.py start_yolov8n_pret",
+            "type": "python",
+            "request": "launch",
+            "program": "commands.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "start_yolov8n_pret",
+                "${env:USERNAME}"
+            ],
+            "envFile" : "venv_cv_detect_bags_experiments/bin/activate"
+        },
+        {
+            "name": "commands.py start_yolov8n_alex",
+            "type": "python",
+            "request": "launch",
+            "program": "commands.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "start_yolov8n_alex",
+                "${env:USERNAME}"
+            ],
+            "envFile" : "venv_cv_detect_bags_experiments/bin/activate"
+        },
     ]
 }

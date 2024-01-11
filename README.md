@@ -9,6 +9,8 @@ pip install -r requirements.txt
 dvc pull --remote myremote --force
 ```
 
+Можешь пускать через debug там launch с соотвествующим названием.
+
 ## Запуск двух вариантов моделек на видео
 
 Родная:
