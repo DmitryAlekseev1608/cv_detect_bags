@@ -4,4 +4,4 @@ data/
 __pycache__
 models/yolo8n_alex.pt
 models/yolov8n_pret.pt
-/models
+
