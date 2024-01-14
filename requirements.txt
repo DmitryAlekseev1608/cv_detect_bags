@@ -2,3 +2,4 @@ ultralytics
 fire
 dvc
 dvc_gdrive
+dvc-ssh
