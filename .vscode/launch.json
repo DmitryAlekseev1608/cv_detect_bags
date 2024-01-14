@@ -11,17 +11,31 @@
             "type": "node"
         },
         {
-            "name": "commands.py start_load_dataset_coco",
-            "type": "python",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/app.js",
             "request": "launch",
-            "program": "commands.py",
-            "console": "integratedTerminal",
-            "justMyCode": true,
-            "args": [
-                "start_load_dataset_coco",
-                "${env:USERNAME}"
+            "skipFiles": [
+                "<node_internals>/**"
             ],
-            "envFile" : "venv_cv_detect_bags_experiments/bin/activate"
+            "type": "node"
+        },
+        {
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/app.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/app.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
         },
         {
             "name": "commands.py start_yolov8n_pret",
@@ -49,5 +63,18 @@
             ],
             "envFile" : "venv_cv_detect_bags_experiments/bin/activate"
         },
+        {
+            "name": "commands.py start_cv_detect_bags_yolo8n_one_class_coco2017",
+            "type": "python",
+            "request": "launch",
+            "program": "commands.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "start_cv_detect_bags_yolo8n_one_class_coco2017",
+                "${env:USERNAME}"
+            ],
+            "envFile" : "venv_cv_detect_bags_experiments/bin/activate"
+        }
     ]
 }
