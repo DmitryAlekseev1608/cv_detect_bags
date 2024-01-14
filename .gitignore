@@ -6,3 +6,5 @@ models/*
 notebooks/*
 
 /models
+/data
+/notebooks
