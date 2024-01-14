@@ -4,9 +4,14 @@ yolo8n_alex:
   path_model : 'models/yolo8n_alex.pt'
 
 yolov8n_pret:
-  classes : [24, 26, 28]
+  classes : [1, 24, 26, 28]
   conf : 0.4
   path_model : 'models/yolov8n_pret.pt'  
+
+cv_detect_bags_yolo8n_one_class_coco2017:
+  classes : 0
+  conf : 0.7
+  path_model : 'models/cv_detect_bags_yolo8n_one_class_coco2017.pt'
 
 data:
   path_vid : 'data/vid/vid1.mp4'
