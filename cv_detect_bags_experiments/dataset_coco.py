@@ -18,7 +18,7 @@ class DatasetCoco():
         self.segments = segments
         self.dataset_root_dir = dataset_root_dir
     
-    def load_dataset_coco(self):
+    def load_dataset(self):
    
         segments = self.segments  # segment or box labels
         dir = Path(self.dataset_root_dir)  # dataset root dir

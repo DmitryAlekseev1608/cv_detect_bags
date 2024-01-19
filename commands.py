@@ -10,8 +10,8 @@ def cv_detect_bags_yolo8n():
                                                       cfg_yolo8n.data.path_vid)
     cv_detect_bags_yolo8n.start_work_str_vid()
 
-def load_dataset_coco():
-    dataset_coco = DatasetCoco(cfg_dataset_coco.param.segments, cfg_dataset_coco.param.dataset_root_dir)
+def load_dataset():
+    dataset_coco = DatasetCoco(cfg_dataset_coco.coco.segments, cfg_dataset_coco.coco.dataset_root_dir)
     dataset_coco.load_dataset_coco()
 
 def watch_param_model(model):
@@ -22,5 +22,5 @@ if __name__ == '__main__':
 
     initialize(version_base=None, config_path="configs", job_name="app")
     cfg_yolo8n = compose(config_name="yolo8n")
-    cfg_dataset_coco = compose(config_name="dataset_coco")
+    cfg_dataset_coco = compose(config_name="dataset")
     fire.Fire()
