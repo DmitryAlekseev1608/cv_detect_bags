@@ -3,3 +3,4 @@ fire
 dvc
 dvc_gdrive
 dvc-ssh
+dvc_s3

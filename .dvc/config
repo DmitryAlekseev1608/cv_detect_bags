@@ -1,7 +1,9 @@
 [core]
-    remote = ssh-storage
+    remote = s3-remote
     autostage = true
 ['remote "ssh-storage"']
     url = ssh://xtc@158.160.104.71:22/home/xtc/CV_core/cv_detect_bags_experiments_data
     user = xtc
     port = 22
+['remote "s3-remote"']
+    url = s3://xtc-datasets-bucket
