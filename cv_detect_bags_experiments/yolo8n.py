@@ -49,3 +49,4 @@ class Yolo8n():
         model = YOLO(self.path_model)
         metrics = model.val()
         print(metrics.box.maps)
+

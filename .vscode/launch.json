@@ -2,76 +2,14 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/app.js",
-            "request": "launch",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "type": "node"
-        },
-        {
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/app.js",
-            "request": "launch",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "type": "node"
-        },
-        {
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/app.js",
-            "request": "launch",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "type": "node"
-        },
-        {
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/app.js",
-            "request": "launch",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "type": "node"
-        },
-        {
-            "name": "commands.py start_yolov8n_pret",
+            "name": "commands.py cv_detect_bags_yolo8n",
             "type": "python",
             "request": "launch",
             "program": "commands.py",
             "console": "integratedTerminal",
             "justMyCode": true,
             "args": [
-                "start_yolov8n_pret",
-                "${env:USERNAME}"
-            ],
-            "envFile" : "venv_cv_detect_bags_experiments/bin/activate"
-        },
-        {
-            "name": "commands.py start_yolov8n_alex",
-            "type": "python",
-            "request": "launch",
-            "program": "commands.py",
-            "console": "integratedTerminal",
-            "justMyCode": true,
-            "args": [
-                "start_yolov8n_alex",
-                "${env:USERNAME}"
-            ],
-            "envFile" : "venv_cv_detect_bags_experiments/bin/activate"
-        },
-        {
-            "name": "commands.py start_cv_detect_bags_yolo8n_one_class_coco2017",
-            "type": "python",
-            "request": "launch",
-            "program": "commands.py",
-            "console": "integratedTerminal",
-            "justMyCode": true,
-            "args": [
-                "start_cv_detect_bags_yolo8n_one_class_coco2017",
+                "cv_detect_bags_yolo8n",
                 "${env:USERNAME}"
             ],
             "envFile" : "venv_cv_detect_bags_experiments/bin/activate"
