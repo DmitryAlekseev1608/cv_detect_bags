@@ -8,4 +8,4 @@ coco:
   segments: False
 
 open_images_v7:
-  classes : ['Backpack', 'Briefcase', 'Handbag']
+  classes : ['Backpack', 'Briefcase', 'Handbag', 'Luggage and bags', 'Picnic basket', 'Plastic bag', 'Suitcase']
