@@ -1,5 +1,5 @@
 [core]
-    remote = ssh-storage
+    remote = ssh-storage-pull-server
     autostage = true
 ['remote "ssh-storage"']
     url = ssh://xtc@158.160.104.71:22/home/xtc/CV_core/cv_detect_bags_experiments_data
@@ -7,3 +7,5 @@
     port = 22
 ['remote "s3-remote"']
     url = s3://xtc-datasets-bucket
+['remote "ssh-storage-pull-server"']
+    url = /home/xtc/CV_core/cv_detect_bags_experiments_data

@@ -13,6 +13,11 @@ def watch_param_model(model):
     model = torch.load(f"models/{model}")
     print(model)
 
+def train():
+    model_yolo8n = Yolo8n(cfg_yolo8n.yolo8n.conf, cfg_yolo8n.yolo8n.classes, cfg_yolo8n.yolo8n.path_model, \
+                                                      cfg_yolo8n.data.path_vid)
+    model_yolo8n.train()
+
 if __name__ == '__main__':
 
     initialize(version_base=None, config_path="configs", job_name="app")

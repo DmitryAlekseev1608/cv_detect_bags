@@ -50,3 +50,18 @@ class Yolo8n():
         metrics = model.val()
         print(metrics.box.maps)
 
+    def train(self):
+
+        dataset_name = "data/dataset/coco.yaml"
+        model = YOLO("yolov8n.pt")
+
+        model.train(
+            data=dataset_name,
+            epochs=300,
+            patience=30,
+            batch=64,
+            imgsz=640,
+            device='cuda',
+            workers=24,
+            project='CV_detect_bags_experiments'
+        )

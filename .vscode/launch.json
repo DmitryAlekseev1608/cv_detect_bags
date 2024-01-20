@@ -13,6 +13,19 @@
                 "${env:USERNAME}"
             ],
             "envFile" : "venv_cv_detect_bags_experiments/bin/activate"
+        },
+        {
+            "name": "commands.py train",
+            "type": "python",
+            "request": "launch",
+            "program": "commands.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "train",
+                "${env:USERNAME}"
+            ],
+            "envFile" : "venv_cv_detect_bags_experiments/bin/activate"
         }
     ]
 }
