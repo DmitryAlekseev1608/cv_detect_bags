@@ -9,3 +9,5 @@
     url = s3://xtc-datasets-bucket
 ['remote "ssh-storage-pull-server"']
     url = /home/xtc/CV_core/cv_detect_bags_experiments_data
+['remote "gdrive"']
+    url = gdrive://1hHK3N2jhRqpfGNVV6MDQEPkm-fjhypqf
