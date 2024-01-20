@@ -43,6 +43,6 @@ def load_dataset(classes):
             
 if __name__ == '__main__':
 
-    initialize(version_base=None, config_path="configs", job_name="app")
+    initialize(version_base=None, config_path="../../configs", job_name="app")
     cfg_dataset = compose(config_name="dataset")
     load_dataset(cfg_dataset.open_images_v7.classes)
