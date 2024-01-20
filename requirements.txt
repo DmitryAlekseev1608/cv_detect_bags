@@ -6,3 +6,5 @@ dvc-ssh
 dvc_s3
 wheel
 fiftyone
+fiftyone-db-ubuntu2204
+

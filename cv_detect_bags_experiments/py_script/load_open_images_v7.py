@@ -1,21 +1,35 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+from hydra import compose, initialize
+
 from ultralytics.utils import LOGGER, SETTINGS, Path, is_ubuntu, get_ubuntu_version
 from ultralytics.utils.checks import check_requirements, check_version
+
+check_requirements('fiftyone')
+if is_ubuntu() and check_version(get_ubuntu_version(), '>=22.04'):
+      # Ubuntu>=22.04 patch https://github.com/voxel51/fiftyone/issues/2961#issuecomment-1666519347
+      check_requirements('fiftyone-db-ubuntu2204')
+
 import fiftyone as fo
 import fiftyone.zoo as foz
 import warnings
-from hydra import compose, initialize
 
-def load_dataset(classes):
-
-    check_requirements('fiftyone')
+def load_dataset(classes): 
     
-    if is_ubuntu() and check_version(get_ubuntu_version(), '>=22.04'):
-    
-    # Ubuntu>=22.04 patch https://github.com/voxel51/fiftyone/issues/2961#issuecomment-1666519347
-        check_requirements('fiftyone-db-ubuntu2204')
-
     name = 'open-images-v7'
     fraction = 1.0  # fraction of full dataset to use
+    LOGGER.warning('WARNING ⚠️ Open Images V7 dataset requires at least **561 GB of free space. Starting download...')
     for split in 'train', 'validation':  # 1743042 train, 41620 val images
         train = split == 'train'
 
@@ -29,7 +43,8 @@ def load_dataset(classes):
 
         # Define classes
         if train:
-            classes = dataset.distinct('ground_truth.detections.label')  # only observed classes
+            classes = dataset.default_classes  # all classes
+            # classes = dataset.distinct('ground_truth.detections.label')  # only observed classes
 
         # Export to YOLO format
         with warnings.catch_warnings():
