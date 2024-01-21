@@ -25,10 +25,10 @@ class Yolo8n():
 
             if success:
                 # Run YOLOv8 inference on the frame
-                results = model.predict(frame, conf=self.conf, save_txt=True, save_conf=True, classes=self.classes, show=True)
+                results = model.predict(frame, conf=self.conf, save_txt=True, save_conf=True, classes=self.classes)
 
                 # Visualize the results on the frame
-                annotated_frame = results[0].plot(conf = False)
+                annotated_frame = results[0].plot(conf=True)
 
                 # Display the annotated frame
                 cv2.imshow("YOLOv8 Inference", annotated_frame)

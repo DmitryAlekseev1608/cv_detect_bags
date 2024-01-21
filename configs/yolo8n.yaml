@@ -1,7 +1,7 @@
 yolo8n:
-  classes : 0
-  conf : 0.5
-  path_model : 'models/best.pt'
+  classes : [0, 1, 2]
+  conf : 0.6
+  path_model : 'models/yolov8n-0.28-1cl-coco-rf.pt'
 
 data:
   path_vid : 'data/vid/vid1.mp4'
