@@ -10,8 +10,6 @@ for name_file in names_files:
     for i in range(len(df_table)):
         if df_table['CLASS'].iloc[i] == 0:
             df_table['CLASS'].iloc[i] = 1
-        elif  df_table['CLASS'].iloc[i] == 1:
-            df_table['CLASS'].iloc[i] = 0
 
     #specify path for export
     path = f'/home/oem/Desktop/dataset_roboflow/val/labels_new/{name_file}'
