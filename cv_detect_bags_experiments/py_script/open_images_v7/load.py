@@ -21,7 +21,6 @@ for split in 'train', 'validation':  # 1743042 train, 41620 val images
                                     split=split,
                                     label_types=['detections'],
                                     dataset_dir=Path(SETTINGS['datasets_dir']) / 'fiftyone' / name,
-                                    max_samples=round((1743042 if train else 41620) * fraction),
                                     classes=['Backpack', 'Briefcase', 'Handbag', 'Luggage and bags', 'Picnic basket', 'Plastic bag', 'Suitcase'])
 
     # Define classes
