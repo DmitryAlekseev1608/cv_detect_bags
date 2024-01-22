@@ -1,5 +1,6 @@
 from ultralytics import YOLO
 import cv2
+import torch
 
 class Yolo8n():
 
@@ -55,13 +56,15 @@ class Yolo8n():
         dataset_name = "data/dataset/coco.yaml"
         model = YOLO("yolov8n.pt")
 
+        torch.cuda.empty_cache()
+
         model.train(
             data=dataset_name,
             epochs=300,
-            patience=30,
-            batch=64,
+            patience=15,
+            batch=16,
             imgsz=640,
             device='cuda',
-            workers=24,
-            project='CV_detect_bags_experiments'
+            project='models',
+            name = 'Dataset: coco2017, roboflow bags, open images v7; Class: bag'
         )
