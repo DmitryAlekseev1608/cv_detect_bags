@@ -1,6 +1,8 @@
 from ultralytics import YOLO
 import cv2
 import torch
+from datetime import date
+import datetime
 
 class Yolo8n():
 
@@ -53,8 +55,12 @@ class Yolo8n():
 
     def train(self):
 
-        dataset_name = "data/dataset/coco.yaml"
+        dataset_name = "/home/oem/Desktop/cv_detect_bags_experiments/data/dataset/coco.yaml"
         model = YOLO("yolov8n.pt")
+        current_date = date.today()
+        
+        current_date_time = datetime.datetime.now()
+        current_time = current_date_time.time()
 
         torch.cuda.empty_cache()
 
@@ -65,6 +71,5 @@ class Yolo8n():
             batch=16,
             imgsz=640,
             device='cuda',
-            project='models',
-            name = 'Dataset: coco2017, roboflow bags, open images v7; Class: bag'
+            project=f'models/yolov8n_{current_date}_{current_time}'
         )

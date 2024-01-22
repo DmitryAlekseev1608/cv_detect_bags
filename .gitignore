@@ -8,3 +8,4 @@ notebooks/*
 /models
 /data
 /notebooks
+/yolov8n.pt
