@@ -63,5 +63,6 @@ class Yolo8n():
             imgsz=640,
             device='cuda',
             workers=24,
-            project='CV_detect_bags_experiments'
+            project='models/yolov8n',
+            name = 'coco2017_roboflow_bags_open_images_v7'
         )
