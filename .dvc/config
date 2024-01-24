@@ -1,5 +1,5 @@
 [core]
-    remote = ssh-storage-pull-server
+    remote = gdrive
     autostage = true
 ['remote "ssh-storage"']
     url = ssh://xtc@158.160.104.71:22/home/xtc/CV_core/cv_detect_bags_experiments_data
@@ -10,4 +10,4 @@
 ['remote "ssh-storage-pull-server"']
     url = /home/xtc/CV_core/cv_detect_bags_experiments_data
 ['remote "gdrive"']
-    url = gdrive://1hHK3N2jhRqpfGNVV6MDQEPkm-fjhypqf
+    url = gdrive://1QyZDiGTum7lZPZOHktF-pQmOoYvXmQ74
