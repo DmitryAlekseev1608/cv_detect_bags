@@ -1,7 +1,7 @@
 yolo8n:
-  classes : [0, 1, 2]
-  conf : 0.6
-  path_model : 'models/yolov8n-0.28-1cl-coco-rf.pt'
+  classes : 0
+  conf : 0.7
+  path_model : 'models/yolov8n_2024-01-23_01:18:23/train/weights/best.pt'
 
 data:
   path_vid : 'data/vid/vid1.mp4'

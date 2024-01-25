@@ -60,7 +60,7 @@ class Yolo8n():
         current_date = date.today()
         
         current_date_time = datetime.datetime.now()
-        current_time = current_date_time.time()
+        current_time = str(current_date_time.time()).split('.')[0]
 
         torch.cuda.empty_cache()
 
