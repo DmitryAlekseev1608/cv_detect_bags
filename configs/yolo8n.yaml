@@ -4,5 +4,5 @@ yolo8n:
   path_model : 'models/yolov8n_2024-01-23_01:18:23/train/weights/best.pt'
 
 data:
-  path_vid : 'data/vid/vid1.mp4'
+  path_vid : 'data/vid/vid2.mpeg'
 
