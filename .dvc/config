@@ -1,13 +1,5 @@
 [core]
     remote = gdrive
-    autostage = true
-['remote "ssh-storage"']
-    url = ssh://xtc@158.160.104.71:22/home/xtc/CV_core/cv_detect_bags_experiments_data
-    user = xtc
-    port = 22
-['remote "s3-remote"']
-    url = s3://xtc-datasets-bucket
-['remote "ssh-storage-pull-server"']
-    url = /home/xtc/CV_core/cv_detect_bags_experiments_data
 ['remote "gdrive"']
-    url = gdrive://1QyZDiGTum7lZPZOHktF-pQmOoYvXmQ74
+    url = gdrive://1lVHhOPi85hKXPj6hMPT9iZlcNziDTQnz
+    gdrive_acknowledge_abuse = true

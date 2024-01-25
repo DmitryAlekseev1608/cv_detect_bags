@@ -6,18 +6,11 @@ pip install -r requirements.txt
 ```
 2.
 ```bash
-dvc pull --remote myremote --force
+dvc pull --remote gdrive
 ```
 
 Можешь пускать через debug там launch с соотвествующим названием.
 
-## Запуск двух вариантов моделек на видео
+## Принципы решения задачи
 
-Родная:
-```bash
-python3 commands.py start_yolov8n_pret
-```
-Твоя:
-```bash
-python3 commands.py start_yolov8n_alex
-```
+Ведется обучение монодетектора.
