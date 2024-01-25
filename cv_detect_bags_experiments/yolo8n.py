@@ -19,33 +19,37 @@ class Yolo8n():
 
         # Open the video file
         video_path = self.path_vid
-        cap = cv2.VideoCapture(video_path)
+        results = model.predict(video_path, conf=self.conf, save_txt=True, save_conf=True, classes=self.classes, save=True,
+                                        line_width=3)
+        
+        # cap = cv2.VideoCapture(video_path)
 
-        # Loop through the video frames
-        while cap.isOpened():
-            # Read a frame from the video
-            success, frame = cap.read()
+        # # Loop through the video frames
+        # while cap.isOpened():
+        #     # Read a frame from the video
+        #     success, frame = cap.read()
 
-            if success:
-                # Run YOLOv8 inference on the frame
-                results = model.predict(frame, conf=self.conf, save_txt=True, save_conf=True, classes=self.classes)
+        #     if success:
+        #         # Run YOLOv8 inference on the frame
+        #         results = model.predict(frame, conf=self.conf, save_txt=True, save_conf=True, classes=self.classes, save=True,
+        #                                 line_width=3)
 
                 # Visualize the results on the frame
-                annotated_frame = results[0].plot(conf=True)
+                # annotated_frame = results[0].plot(conf=True)
 
-                # Display the annotated frame
-                cv2.imshow("YOLOv8 Inference", annotated_frame)
+                # # Display the annotated frame
+                # cv2.imshow("YOLOv8 Inference", annotated_frame)
 
-                # Break the loop if 'q' is pressed
-                if cv2.waitKey(1) & 0xFF == ord("q"):
-                    break
-            else:
-                # Break the loop if the end of the video is reached
-                break
+                # # Break the loop if 'q' is pressed
+                # if cv2.waitKey(1) & 0xFF == ord("q"):
+                #     break
+            # else:
+            #     # Break the loop if the end of the video is reached
+            #     break
 
         # Release the video capture object and close the display window
-        cap.release()
-        cv2.destroyAllWindows()
+        # cap.release()
+        # cv2.destroyAllWindows()
 
     def valid(self):
 
