@@ -1,6 +1,6 @@
 yolo8n:
   classes : 0
-  conf : 0.7
+  conf : 0.4
   path_model : 'models/yolov8n_2024-01-23_01:18:23/train/weights/best.pt'
 
 data:
